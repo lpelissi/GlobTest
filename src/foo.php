@@ -18,7 +18,7 @@ function foo($intervals): array
         //si les intervales se superposent, on les fusionne
         if ($interval[0] <= $cmpInterval[1]) {
 
-            // on fusionne en récuperant la valeur max des 2 intervales
+            // on fusionne en récuperant la valeur max entre les 2 intervales
             $cmpInterval[1] = max($cmpInterval[1], $interval[1]);
 
         //sinon on ajoute l'intervale a la suite au tableau de retour
